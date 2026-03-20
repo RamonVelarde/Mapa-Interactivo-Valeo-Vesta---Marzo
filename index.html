@@ -1122,8 +1122,8 @@ document.getElementById('f-date').value = today;
 
 /* ───────── DEMO MARKERS ───────── */
 const demoData = [
-{ id: 1, type:'riesgo', title:'Fuga en Cuarto de Compresores', detail:'Fuga de aire comprimido detectada. Revisar mangueras.', area:'Facilities', date:'2026-03-20', risk:'alto', x:'15.0', y:'25.0' },];
-
+{ id: 1, type:'riesgo', title:'Fuga en Cuarto de Compresores', detail:'Fuga de aire comprimido detectada. Revisar mangueras.', area:'Facilities', date:'2026-03-20', risk:'alto', x:'15.0', y:'25.0' }
+{ id: 8, type:'riesgo', title:'Cartel de estacionamiento desprendido', detail:'Cartel metálico parcialmente desprendido. El viento provoca que la lámina golpee la estructura generando ruido. Incumple NOM-001-STPS, NOM-011-STPS y Convenios OIT.', area:'Estacionamiento', date:'2026-03-16', risk:'medio', x:'90.0', y:'90.0' },];
 demoData.forEach(m => { markers.push(m); renderMarker(m); });
 updateCounts();
 renderRecords();
