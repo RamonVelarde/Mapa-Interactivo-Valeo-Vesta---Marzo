@@ -1122,13 +1122,7 @@ document.getElementById('f-date').value = today;
 
 /* ───────── DEMO MARKERS ───────── */
 const demoData = [
-  { id: 1, type:'riesgo',    title:'Señalización deficiente',         detail:'Zona sin señalización visible de riesgos eléctricos ni rutas de evacuación.',                              area:'HSE / Seguridad',       date:'2026-02-10', risk:'alto',  x:'42.5', y:'28.0' },
-  { id: 2, type:'incendio',  title:'Extinguidor sin vigencia',        detail:'Extintor caducado en pasillo central. Fecha de recarga vencida hace 3 meses.',                              area:'HSE / Seguridad',       date:'2026-02-15', risk:'alto',  x:'63.0', y:'22.0' },
-  { id: 3, type:'higiene',   title:'Acumulación de residuos',         detail:'Área de descanso con basura sin evacuación. Presencia de fauna nociva.',                                    area:'Producción',            date:'2026-03-05', risk:'medio', x:'72.0', y:'52.0' },
-  { id: 4, type:'ergonomia', title:'Puesto sin apoyabrazos',          detail:'Operador en línea AP requiere postura forzada por más de 4 h continuas.',                                   area:'Servicio Médico',       date:'2026-03-15', risk:'medio', x:'55.0', y:'70.0' },
-  { id: 5, type:'incidente', title:'Caída por superficie resbalosa',  detail:'Incidente reportado el 12-feb. Piso mojado sin señalización. Trabajador con esguince.',                     area:'Servicio Médico / HSE', date:'2026-02-12', risk:'alto',  x:'28.0', y:'60.0' },
-  { id: 6, type:'generico',  title:'Cuarto de compresores',           detail:'Área no visible en el plano. Revisar condiciones de ventilación, ruido y temperatura. Requiere inspección presencial.', area:'Pendiente de asignar', date:'2026-03-20', risk:'medio', x:'14.0', y:'42.0' },
-];
+{ id: 1, type:'riesgo', title:'Fuga en Cuarto de Compresores', detail:'Fuga de aire comprimido detectada. Revisar mangueras.', area:'Facilities', date:'2026-03-20', risk:'alto', x:'15.0', y:'25.0' },];
 
 demoData.forEach(m => { markers.push(m); renderMarker(m); });
 updateCounts();
